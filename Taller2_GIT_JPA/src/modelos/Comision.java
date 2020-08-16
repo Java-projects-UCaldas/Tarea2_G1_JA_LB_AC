@@ -47,8 +47,7 @@ public class Comision extends Empleado{
 
 	@Override
 	public double calcularSalario() {
-		// TODO Auto-generated method stub
-		return 0;
+		return (this.valorVentasRealizadas * 0.05) + this.salarioBase;
 	}
 
 }

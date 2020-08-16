@@ -10,9 +10,9 @@ package control;
  */
 
 @SuppressWarnings("serial")
-public class EmpleadoExcepcion extends Exception{
+public class EmpleadoException extends Exception{
 	
-	public EmpleadoExcepcion(String mensaje) {
+	public EmpleadoException(String mensaje) {
 		super(mensaje);
 	}
 
