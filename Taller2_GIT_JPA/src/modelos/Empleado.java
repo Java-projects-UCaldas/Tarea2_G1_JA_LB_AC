@@ -1,6 +1,11 @@
 package modelos;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.DiscriminatorColumn;
+
 
 /**
  * 
@@ -11,6 +16,10 @@ import javax.persistence.Id;
  *  objetos tipo empleado y se denota el método 
  *  calcularSalario
  */
+
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "tipo")
 public abstract class Empleado {
 	
 	@Id
@@ -27,6 +36,22 @@ public abstract class Empleado {
 		this.nombre = nombre;
 	}
 	
+	public String getIdentificador() {
+		return identificador;
+	}
+
+	public void setIdentificador(String identificador) {
+		this.identificador = identificador;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
 	/**
 	 * Método que calcula el salario dependiendo del tipo 
 	 * de empleado, es decir, si es Asalariado, por Horas,

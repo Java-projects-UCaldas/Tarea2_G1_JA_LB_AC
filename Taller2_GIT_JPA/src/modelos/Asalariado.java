@@ -1,7 +1,10 @@
 package modelos;
 
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
 
-
+@Entity
+@DiscriminatorValue("asalariado")
 public class Asalariado extends Empleado  {
 
 	private double salarioSemanal;
@@ -18,7 +21,7 @@ public class Asalariado extends Empleado  {
 	
 	@Override
 	public double calcularSalario() {
-		return salarioSemanal;
+		return this.salarioSemanal;
 	}
 
 	public double getSalarioSemanal() {
