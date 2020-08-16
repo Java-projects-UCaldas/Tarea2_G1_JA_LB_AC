@@ -21,4 +21,12 @@ public class Asalariado extends Empleado  {
 		return salarioSemanal;
 	}
 
+	public double getSalarioSemanal() {
+		return salarioSemanal;
+	}
+
+	public void setSalarioSemanal(double salarioSemanal) {
+		this.salarioSemanal = salarioSemanal;
+	}
+
 }
