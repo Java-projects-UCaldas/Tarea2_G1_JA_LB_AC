@@ -45,7 +45,15 @@ public class Horas extends Empleado{
 
 	@Override
 	public double calcularSalario() {
-		return 0;
+		double salario = 0;
+		double bono = 200000;
+		if (this.horasTrabajadas > 40) {
+			salario = (this.valorHora * this.horasTrabajadas) + bono;
+		}
+		else {
+			salario = this.valorHora * this.horasTrabajadas;
+		}
+		return salario;
 	}
 
 }
