@@ -277,8 +277,8 @@
 <XPD:OBJ name="OwnedViews[10]" type="UMLPackageView" guid="nvnrFk6a2UOtaJe9Kxsw5AAA">
 <XPD:ATTR name="Left" type="integer">944</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">316</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">313</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">217</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">361</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">273</XPD:ATTR>
 <XPD:REF name="Model">R68qldvE20SQAkyQ9UnZwwAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="e3FQAwAX3EWz/z7g4gnYgAAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="mEC6h/1TiU6ltJBe523NGwAA">
@@ -323,7 +323,7 @@
 <XPD:ATTR name="Left" type="integer">952</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">472</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">97</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">43</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">56</XPD:ATTR>
 <XPD:REF name="Model">NbcKUpVRI0+nd/U/+m4h0AAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="Tvh9QgUZ10mXxF1eJLFR2wAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="Bu9oY7gMn066aqww3GXJPgAA">
@@ -349,7 +349,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[13]" type="UMLRealizationView" guid="3S30tcrga0ihQpkn7DQbbwAA">
-<XPD:ATTR name="Points" type="Points">1002,472;1009,412</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">1003,472;1009,412</XPD:ATTR>
 <XPD:REF name="Model">ppY194ZIBUeVS6sfTa9GzQAA</XPD:REF>
 <XPD:REF name="Head">YqfbxTcRHk2B/zg+ypqOzgAA</XPD:REF>
 <XPD:REF name="Tail">zJAqE4C1k0GKScTClnDEwAAA</XPD:REF>
