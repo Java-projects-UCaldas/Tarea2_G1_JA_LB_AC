@@ -28,12 +28,18 @@ public class Compania {
 	 * para poder determinar lo que deberá pagar la compañia
 	 * @return	nomina semanal de los empleados
 	 */
-	public double calcularNominaSemanal() {
+	public double calcularNominaSemanal() throws EmpleadoException{
 		List<Empleado> empleados = repositorioEmpleados.consultarEmpleados();
 		double nominaSemanal = 0;
-		for (Empleado empleado : empleados) {
-			nominaSemanal += empleado.calcularSalario();
+		
+		if(empleados.isEmpty()) {
+			throw new EmpleadoException("No existen empleados");
+		}else {
+			for (Empleado empleado : empleados) {
+				nominaSemanal += empleado.calcularSalario();
+			}
 		}
+		
 		return nominaSemanal;
 	}
 	
