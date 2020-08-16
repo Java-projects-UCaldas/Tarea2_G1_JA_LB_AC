@@ -30,6 +30,7 @@ public class Compania {
 	 */
 	public double calcularNominaSemanal() throws EmpleadoException{
 		List<Empleado> empleados = repositorioEmpleados.consultarEmpleados();
+		System.out.println(empleados);
 		double nominaSemanal = 0;
 		
 		if(empleados.isEmpty()) {

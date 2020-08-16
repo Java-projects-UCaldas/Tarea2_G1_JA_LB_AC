@@ -20,14 +20,15 @@ public class OrmEmpleados implements RepositorioEmpleados{
 	private EntityManager gestorBd;
 	
 	public OrmEmpleados() {
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Empleados");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("EmpleadosPU");
 		gestorBd = fabrica.createEntityManager();
 	}
 	
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Empleado> consultarEmpleados() {
-		Query query = gestorBd.createQuery("select b from Barco b");
+		Query query = gestorBd.createQuery("select e from Empleado e");
+		System.out.println(query);
 		List<Empleado> empleados = query.getResultList();
 		return empleados;
 	}

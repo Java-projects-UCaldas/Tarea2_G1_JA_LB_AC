@@ -22,7 +22,7 @@ public class ORMTest {
 		Empleado empleadoBuscado = gestorBD.find(Empleado.class, "123"); 
 		System.out.println(empleadoBuscado.getClass()); 
 		gestorBD.remove(empleadoBuscado);
-		gestorBD.getTransaction().commit();
+		gestorBD.getTransaction().commit();		
 		gestorBD.close(); 
 	}
 
