@@ -18,7 +18,7 @@ public class Asalariado extends Empleado  {
 	
 	@Override
 	public double calcularSalario() {
-		return 0;
+		return salarioSemanal;
 	}
 
 }
