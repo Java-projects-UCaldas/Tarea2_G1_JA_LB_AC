@@ -4,11 +4,11 @@ import modelos.Empleado;
 import modelos.FabricaEmpleados;
 import persistencia.OrmEmpleados;
 import persistencia.RepositorioEmpleados;
-
 import java.util.List;
 
-
 /**
+ * Clase que se encarga del registro de los empleados y contiene las principales 
+ * funciones del programa
  * @author Jhon
  * @author Andres
  * @author Lucas
@@ -48,25 +48,19 @@ public class Compania {
 	 * Adiciona un nuevo Empleado a partir de los parametros recibidos
 	 * @param identificador valor de la identificacion del empleado
 	 * @param nombre valor del nombre del empleado
-	 * @param tipo de que tipo es el empleado: 'a' para Asalariado, 'h' para Horas, 'c' para Comision
+	 * @param tipo valor de que tipo es el empleado: 'a' para Asalariado, 'h' para Horas, 'c' para Comision
 	 * @param salarioSemanal valor del salario semanal del empleado
 	 * @param valorHora valor por hora trabajada del empleado
 	 * @param horasTrabajadas cantidad de horas trabajadas del empleado
 	 * @param salarioBase valor del salario base semanal del empleado
 	 * @param valorVentasRealizadas valor de las ventas semanales realizadas del empleado
-	 * @return el objeto Empleado (Asalariado, Horas o Comision) creado
-	 * 			o null si no se especifica un tipo valido de empleado
+	 * @return un valor booleano: 'True' si el Empleado (Asalariado, Horas o Comision) se ha creado
+	 * 			o 'false' si no se especifica un tipo valido de empleado
 	 * @throws EmpleadoException cuando alguna de las reglas del negocio no se cumple.
-	 * 				En este caso: volumen debe ser un valor mayor a cero y menor a 1000
-	 * @see puertos.entidades.Barco#Barco(String, String, double)
 	 */
 	public boolean adicionarEmpleado(String identificador, String nombre, char tipo, double salarioSemanal, 
 			double valorHora, int horasTrabajadas, double salarioBase, double valorVentasRealizadas) 
 	 throws EmpleadoException {
-		/*if (volumen <= 0 || volumen > 1000) {
-			throw new EmpleadoExcepcion("El volumen debe ser un valor positivo entre 1 y 1000");
-		}*/
-		
 		Empleado empleadoBuscado = buscarEmpleado(identificador);
 		if (empleadoBuscado == null) {
 			Empleado empleadoNuevo = FabricaEmpleados.crearEmpleado(identificador, nombre, tipo, salarioSemanal, valorHora, horasTrabajadas, salarioBase, valorVentasRealizadas);
@@ -101,9 +95,4 @@ public class Compania {
 		}
 	}
 	
-    public static void main(String[] args) throws Exception {
-    	
-    	//repositorio
-        
-    }
 }

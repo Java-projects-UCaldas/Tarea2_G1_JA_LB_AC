@@ -18,9 +18,19 @@ public class Horas extends Empleado{
 	private double valorHora;
 	private int horasTrabajadas;
 	
+	/**
+	 * Constructor por defecto. Se tiene para poder usar el API de persistencia JPA
+	 */
 	public Horas() {
 	}
 	
+	/**
+	 * 
+	 * @param identificador identificacion del empleado
+	 * @param nombre nombre del empleado
+	 * @param valorHora valor por hora del empleado
+	 * @param horasTrabajadas cantidad de horas trabajadas por el empleado
+	 */
 	public Horas(String identificador, String nombre, double valorHora, int horasTrabajadas) {
 		super(identificador, nombre);
 		this.valorHora = valorHora;
@@ -30,7 +40,11 @@ public class Horas extends Empleado{
 	public double getValorHora() {
 		return valorHora;
 	}
-
+	
+	/**
+	 * Métodos set para los atributos. Se tienen para poder cumplir con lo
+	 * requerido por el API de persistencia JPA
+	 */
 	public void setValorHora(double valorHora) {
 		this.valorHora = valorHora;
 	}
@@ -38,7 +52,11 @@ public class Horas extends Empleado{
 	public int getHorasTrabajadas() {
 		return horasTrabajadas;
 	}
-
+	
+	/**
+	 * Métodos set para los atributos. Se tienen para poder cumplir con lo
+	 * requerido por el API de persistencia JPA
+	 */
 	public void setHorasTrabajadas(int horasTrabajadas) {
 		this.horasTrabajadas = horasTrabajadas;
 	}

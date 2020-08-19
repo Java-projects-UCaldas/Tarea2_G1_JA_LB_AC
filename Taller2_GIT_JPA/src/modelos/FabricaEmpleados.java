@@ -6,7 +6,7 @@ package modelos;
  * @author Jhon
  * @author Andres
  * @author Lukas
- *@version 1.0
+ * @version 1.0
  *
  */
 public class FabricaEmpleados {

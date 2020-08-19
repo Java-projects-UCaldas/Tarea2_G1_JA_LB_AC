@@ -12,7 +12,9 @@ import modelos.Empleado;
 /**
  * Usa una base de datos como repositorio de los datos de los empleados,
  * y ofrece los servicios definidos en RepositorioEmpleados.
- * 
+ * @author Jhon
+ * @author Andres
+ * @author Lucas
  * @version 1.0
  */
 public class OrmEmpleados implements RepositorioEmpleados{
@@ -65,6 +67,9 @@ public class OrmEmpleados implements RepositorioEmpleados{
 		return true;
 	}
 	
+	/**
+	 * Cierra el EntitiyManager cuando se vaya a destruir este objeto
+	 */
 	@Override
 	protected void finalize() {
 		gestorBd.close();

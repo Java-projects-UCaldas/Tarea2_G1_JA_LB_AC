@@ -7,6 +7,9 @@ import modelos.Empleado;
 /**
  * Servicios relacionados con la gestión de los datos de los empleados
  * en un repositorio (consultar, adicionar, buscar, borrar)
+ * @author Jhon
+ * @author Andres
+ * @author Lucas
  * @version 1.0
  */
 public interface RepositorioEmpleados {

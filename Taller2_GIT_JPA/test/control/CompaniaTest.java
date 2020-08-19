@@ -10,7 +10,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-
+/**
+ * Pruebas de la clase Compania de los metodos 
+ * calcular nomina y adicionar empleados
+ */
 class CompaniaTest {
 
 	/**
@@ -22,6 +25,9 @@ class CompaniaTest {
 		assertThrows(EmpleadoException.class, ()-> compania.calcularNominaSemanal());
 	}
 	
+	/**
+	 * Se verifica que se agregue un empleado de tipo Asalariado
+	 */
 	@Test
 	void testAgregarEmpleadoTipoAsalariado() throws EmpleadoException{
 		Compania compania = new Compania();
@@ -33,6 +39,9 @@ class CompaniaTest {
 		() -> assertTrue(agrega));
 	}
 	
+	/**
+	 * Se verifica que se agregue un empleado de tipo Comision
+	 */
 	@Test
 	void testAgregarEmpleadoTipoComision() throws EmpleadoException{
 		Compania compania = new Compania();
@@ -45,6 +54,9 @@ class CompaniaTest {
 		() -> assertTrue(agrega));
 	}
 	
+	/**
+	 * Se verifica que se agregue un empleado de tipo Horas
+	 */
 	@Test
 	void testAgregarEmpleadoTipoHoras() throws EmpleadoException{
 		Compania compania = new Compania();
@@ -57,6 +69,9 @@ class CompaniaTest {
 		() -> assertTrue(agrega));
 	}
 	
+	/**
+	 * Se calcula el total de la nomina semanal
+	 */
 	@Test
 	void testCalcularNominaSemanal() throws EmpleadoException{
 		Compania compania = new Compania();
